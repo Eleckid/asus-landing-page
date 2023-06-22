@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'TT Norms Pro Regular';
+    src: url('../fonts/tt-norms-pro-regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Medium';
+    src: url('../fonts/tt-norms-pro-medium.ttf');
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Bold';
+    src: url('../fonts/tt-norms-pro-bold.ttf');
+    font-weight: bold;
+}
+
+:root {
+    --light-grey: #d9d9d6;
+    --middle-grey: #ababab;
+    --dark-grey: #53565A;
+    --black: #0000;
+    --white: #ffff;
+    --new-price: #da4800;
+    --font-1: 'TT Norms Pro Regular';
+    --font-2: 'TT Norms Pro Bold';
+    --font-3: 'TT Norms Pro Medium';
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5 !important;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: calc(100% / 30) calc(100% / 20);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section-heading p {
+    font-family: var(--font-1);
+    max-width: 800px;    
+    text-align: center;
+    margin: 0 auto 0.5em auto;
+}
+
+h2 {
+    letter-spacing: -0.6px;
+    margin-bottom: 0.2em;
+    font-size: 2.5em;
+    font-family: var(--font-2);
+}
+
+h3 {
+    font-family: var(--font-2);
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-family: var(--font-2);
+}
+
+
+.product-container {
+    background-color: white;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 2px;
+}
+.product-img {
+    width: 200px;
+    margin-bottom: 1em;
+}
+
+.ksp {
+    margin-bottom: 1em;
+    padding: 0 2em 0 2em;
+}
+
+.price-container{
+    font-family: var(--font-3);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.price {
+    text-decoration: line-through;
+    font-size: 0.6em;
+    color: var(--dark-grey);
+}
+
+
+.new-price {
+    font-size: 1.2em;
+    color: var(--new-price);
+    margin-right: 0.2em;
+}
+
+.sticky{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: fixed;
+    width: 100%;
+}
+
+.active, a.navbar-item:hover {
+    background-color: var(--light-grey);
+    transition: 0.3ms;
+    color: black;
+}
+
+.modal img {
+    width: 100px;
+}
