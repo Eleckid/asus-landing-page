@@ -130,5 +130,5 @@ h4 {
 }
 
 .modal img {
-    width: 100px;
+    max-width: 100px;
 }

@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('scroll', function() {
   var sections = document.querySelectorAll('section');
-  var navLinks = document.querySelectorAll('.navbar-item');
+  var navLinks = document.querySelectorAll(' .navbar-end .navbar-item');
 
   var currentSection = '';
 
@@ -100,21 +100,5 @@ window.addEventListener('scroll', function() {
     }
   });
 }
-
-
-
-
 );
-
-
-var popupButtons = document.getElementsByClassName("popupButton");
-
-for (const popupButton of popupButtons) {
-  popupButton.addEventListener('click', retailersPopup);
-}
-
-function retailersPopup() {
-  document.getElementsByClassName("retailers").classList.toggle("show");
-}
-
 
