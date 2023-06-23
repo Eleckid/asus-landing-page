@@ -144,3 +144,9 @@ button.cta-buy{
     font-family: var(--tt-norms-pro-bold);
     background-color: var(--beyond-blue) !important;
 }
+
+#termsfeed-com---nb {
+    width: 100% !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
