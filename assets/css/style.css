@@ -15,16 +15,20 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/myriad-pro-regular.otf');
+}
+
 :root {
     --light-grey: #d9d9d6;
-    --middle-grey: #ababab;
     --dark-grey: #53565A;
-    --black: #0000;
-    --white: #ffff;
+    --beyond-blue: #133ed4;
     --new-price: #da4800;
-    --font-1: 'TT Norms Pro Regular';
-    --font-2: 'TT Norms Pro Bold';
-    --font-3: 'TT Norms Pro Medium';
+    --tt-norms-pro-reg: 'TT Norms Pro Regular';
+    --tt-norms-pro-bold: 'TT Norms Pro Bold';
+    --tt-norms-pro-med: 'TT Norms Pro Medium';
+    --myriad-pro-reg: 'Myriad Pro Regular';
 }
 
 * {
@@ -38,27 +42,33 @@ html, body {
     height: 100%;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
-body {
+a.navbar-item {
+    font-family: var(--tt-norms-pro-reg) !important;
+}
+
+
+body, section{
     background-color: #f5f5f5 !important;
 }
 
 section {
     min-height: 100vh;
-    background-color: #f5f5f5;
     padding: calc(100% / 30) calc(100% / 20);
 }
 
 .section-heading {
     text-align: center;
     margin-bottom: 2em;
+    color: var(--dark-grey);
 }
 
 .section-heading p {
-    font-family: var(--font-1);
+    font-family: var(--tt-norms-pro-reg);
     max-width: 800px;    
     text-align: center;
     margin: 0 auto 0.5em auto;
@@ -68,19 +78,13 @@ h2 {
     letter-spacing: -0.6px;
     margin-bottom: 0.2em;
     font-size: 2.5em;
-    font-family: var(--font-2);
+    font-family: var(--tt-norms-pro-bold);
 }
 
 h3 {
-    font-family: var(--font-2);
+    font-family: var(--tt-norms-pro-bold);
     font-size: 1.4em;
 }
-
-h4 {
-    font-size: 1.2em;
-    font-family: var(--font-2);
-}
-
 
 .product-container {
     background-color: white;
@@ -95,11 +99,14 @@ h4 {
 
 .ksp {
     margin-bottom: 1em;
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
+    font-family: var(--myriad-pro-reg);
+    font-size: 0.9em;
+    color: var(--dark-grey);
 }
 
 .price-container{
-    font-family: var(--font-3);
+    font-family: var(--tt-norms-pro-med);
     margin-bottom: 1em;
     text-align: center;
 }
@@ -110,25 +117,30 @@ h4 {
     color: var(--dark-grey);
 }
 
-
 .new-price {
     font-size: 1.2em;
     color: var(--new-price);
     margin-right: 0.2em;
 }
 
-.sticky{
+.sticky {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     position: fixed;
     width: 100%;
 }
 
 .active, a.navbar-item:hover {
-    background-color: var(--light-grey);
+    
     transition: 0.3ms;
-    color: black;
+    color: white;
+    background-color: var(--beyond-blue)
 }
 
 .modal img {
     max-width: 100px;
+}
+
+button.cta-buy{
+    font-family: var(--tt-norms-pro-bold);
+    background-color: var(--beyond-blue) !important;
 }
